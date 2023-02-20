@@ -10,10 +10,7 @@ game:GetService("Players").LocalPlayer.OnTeleport:Connect(function(State)
 	end)
 	
 	]]
-	
-	queueteleport = (syn and syn.queue_on_teleport) or queue_on_teleport or (fluxus and fluxus.queue_on_teleport)
 
-game:GetService("Players").LocalPlayer.OnTeleport:Connect(function(State)
 
 --Boronide™ Obfuscation, v0.6.4
 
