@@ -15,10 +15,6 @@ game:GetService("Players").LocalPlayer.OnTeleport:Connect(function(State)
 
 game:GetService("Players").LocalPlayer.OnTeleport:Connect(function(State)
 
-		if queueteleport then
-			queueteleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/JustAP1ayer/ignorewtffxd/main/VIp_Gladiator_Mutli",true))()')
-		end
-	end)
 --Boronide™ Obfuscation, v0.6.4
 
 local Q,m,s=nil,nil,nil([[
