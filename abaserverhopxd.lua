@@ -8,11 +8,11 @@ if game.PlaceId == 5411459567 then
         task.wait(1)
     until game.Workspace:WaitForChild("Message")
 end
-_G.MinTimer = 60
+_G.MinTimer = 69
 
 local function notify(text)
     game.StarterGui:SetCore("SendNotification", {
-        Title = "AFK",
+        Title = "AFK, Waiting " .. tostring(_G.MinTimer) .. "s" ,
         Duration = _G.MinTimer,
         Text = text
     })
