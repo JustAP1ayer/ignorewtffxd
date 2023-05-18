@@ -1,6 +1,5 @@
-
-                 local gold = workspace:WaitForChild("ClaimRiverResultsGold")
  repeat wait() until game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+                 local gold = workspace:WaitForChild("ClaimRiverResultsGold")
   _G.AdvGoldTpFarm2 = true
     local function advcgoldtp()
         for i = 1, 10 do
@@ -9,7 +8,7 @@
              end
             if i == 5 then
                 if game:GetService("Players").LocalPlayer.Character  and game:GetService("Players").LocalPlayer.Character:FindFirstChild("HumanoidRootPart") and game:GetService("Players").LocalPlayer.Character.Humanoid.Health > 0 then
-                    firetouchinterest(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart, workspace.BoatStages.NormalStages.TheEnd.GoldenChest.Trigger, 0)
+                    firetouchinterest(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart, workspace.BoatStages.NormalStages.TheEnd.GoldenChest.Trigger, 0) -- it works doe!!!
                     firetouchinterest(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart, workspace.BoatStages.NormalStages.TheEnd.GoldenChest.Trigger, 0)
                     firetouchinterest(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart, workspace.BoatStages.NormalStages.TheEnd.GoldenChest.Trigger, 0)
                     firetouchinterest(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart, workspace.BoatStages.NormalStages.TheEnd.GoldenChest.Trigger, 1)
@@ -42,5 +41,5 @@
         end
            gold:FireServer()
         queue_on_teleport(
-'loadstring(game:HttpGet("https://raw.githubusercontent.com/JustAP1ayer/ignorewtffxd/main/2131.lua", true))()')
+'loadstring(game:HttpGet("https://raw.githubusercontent.com/JustAP1ayer/ignorewtffxd/main/2131.lua", true))()') -- basically the same script repeated
             loadstring(game:HttpGet("https://raw.githubusercontent.com/JustAP1ayer/ignorewtffxd/main/serverhopxd.lua", true))()
