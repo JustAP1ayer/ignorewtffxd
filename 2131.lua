@@ -1,4 +1,4 @@
- repeat wait() until game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+ repeat wait(0.1) until game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
                  local gold = workspace:WaitForChild("ClaimRiverResultsGold")
         game:GetService("RunService").Stepped:connect(
             function()
