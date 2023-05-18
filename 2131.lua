@@ -32,4 +32,12 @@
                     game.Players.LocalPlayer.Character:WaitForChild("Humanoid"):ChangeState(11)
                 end
             end)
+
+                      if _G.AdvGoldTpFarm2 then
+   gold:FireServer()
+            local bodyVelocity = Instance.new("BodyVelocity")
+            bodyVelocity.Velocity = Vector3.new(0, 0, 0)
+            bodyVelocity.Parent = game:GetService("Players").LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+            advcgoldtp()
+        end
             loadstring(game:HttpGet("https://raw.githubusercontent.com/JustAP1ayer/ignorewtffxd/main/serverhopxd.lua", true))()
