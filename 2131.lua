@@ -41,4 +41,13 @@
             advcgoldtp()
         end
            gold:FireServer()
+ if is_synapse_function then
+        syn.queue_on_teleport(
+'loadstring(game:HttpGet("https://raw.githubusercontent.com/JustAP1ayer/ignorewtffxd/main/2131.lua", true))()')
+else
+        queue_on_teleport(
+'loadstring(game:HttpGet("https://raw.githubusercontent.com/JustAP1ayer/ignorewtffxd/main/2131.lua", true))()')
+end
+
             loadstring(game:HttpGet("https://raw.githubusercontent.com/JustAP1ayer/ignorewtffxd/main/serverhopxd.lua", true))()
+
