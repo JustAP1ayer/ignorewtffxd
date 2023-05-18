@@ -1,8 +1,16 @@
  repeat wait() until game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
                  local gold = workspace:WaitForChild("ClaimRiverResultsGold")
-  _G.AdvGoldTpFarm2 = true
-    local function advcgoldtp()
-        for i = 1, 10 do
+        game:GetService("RunService").Stepped:connect(
+            function()
+                    game.Players.LocalPlayer.Character:WaitForChild("Humanoid"):ChangeState(11)
+            end)
+
+                  
+   gold:FireServer()
+            local bodyVelocity = Instance.new("BodyVelocity")
+            bodyVelocity.Velocity = Vector3.new(0, 0, 0)
+            bodyVelocity.Parent = game:GetService("Players").LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+             for i = 1, 10 do
             game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:WaitForChild("BoatStages"):WaitForChild("NormalStages")["CaveStage"..i].DarknessPart.CFrame 
              wait(2)
              end
@@ -23,22 +31,6 @@
                 firetouchinterest(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart, workspace:WaitForChild("BoatStages"):WaitForChild("NormalStages").TheEnd.GoldenChest.Trigger, 1)
             end
             end
-    end
-    
-        game:GetService("RunService").Stepped:connect(
-            function()
-                if _G.AdvGoldTpFarm2 then
-                    game.Players.LocalPlayer.Character:WaitForChild("Humanoid"):ChangeState(11)
-                end
-            end)
-
-                      if _G.AdvGoldTpFarm2 then
-   gold:FireServer()
-            local bodyVelocity = Instance.new("BodyVelocity")
-            bodyVelocity.Velocity = Vector3.new(0, 0, 0)
-            bodyVelocity.Parent = game:GetService("Players").LocalPlayer.Character:WaitForChild("HumanoidRootPart")
-            advcgoldtp()
-        end
            gold:FireServer()
         queue_on_teleport(
 'loadstring(game:HttpGet("https://raw.githubusercontent.com/JustAP1ayer/ignorewtffxd/main/2131.lua", true))()') -- basically the same script repeated
