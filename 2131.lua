@@ -40,8 +40,9 @@ local gold = workspace:WaitForChild("ClaimRiverResultsGold")
            bodyVelocity.Velocity = Vector3.new(0, 0, 0)
            bodyVelocity.Parent = game:GetService("Players").LocalPlayer.Character:WaitForChild("HumanoidRootPart")
             for i = 1, 10 do
+            task.wait(0.1)
            game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:WaitForChild("BoatStages"):WaitForChild("NormalStages")["CaveStage"..i].DarknessPart.CFrame 
-            wait(2)
+            wait(2.15)
             end
            if i == 5 then
                if game:GetService("Players").LocalPlayer.Character  and game:GetService("Players").LocalPlayer.Character:FindFirstChild("HumanoidRootPart") and game:GetService("Players").LocalPlayer.Character.Humanoid.Health > 0 then
