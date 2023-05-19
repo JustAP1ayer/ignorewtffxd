@@ -1,7 +1,36 @@
-repeat wait(0.1) until  game.Loaded
-if game.PlaceId == 537413528 and task.wait(1) then
+if not game:IsLoaded() then game.Loaded:Wait() end
+if game.PlaceId == 537413528 and task.wait() then
 repeat wait(0.1) until  game.Loaded and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") 
-                local gold = workspace:WaitForChild("ClaimRiverResultsGold")  
+              -- Create a ScreenGui instance
+    local gui = Instance.new("ScreenGui")
+    gui.Name = "FarmGui"
+    gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+    
+    -- Create a Frame to cover the whole screen
+    local frame = Instance.new("Frame")
+    frame.Size = UDim2.new(1, 0, 1, 0)
+    frame.BackgroundColor3 = Color3.new(0, 0, 0)
+    frame.BackgroundTransparency = 0.01
+    frame.Parent = gui
+    
+    -- Create a TextLabel to display the message
+    local message = Instance.new("TextLabel")
+    message.Size = UDim2.new(1, -20, 0, 100)
+    message.Position = UDim2.new(0, 10, 0.5, -50)
+    message.BackgroundColor3 = Color3.new(1, 1, 1)
+    message.BackgroundTransparency = 0.25
+    message.Font = Enum.Font.Arcade
+    message.FontSize = Enum.FontSize.Size36
+    message.Text = "PlayerHub AutoFarm in Progress!"
+    message.TextColor3 = Color3.new(0, 0, 0)
+    message.TextScaled = true
+    message.Parent = frame
+    local bb=game:service'VirtualUser'
+    game:service'Players'.LocalPlayer.Idled:connect(function()
+    bb:CaptureController()
+    bb:ClickButton2(Vector2.new())
+    end)
+local gold = workspace:WaitForChild("ClaimRiverResultsGold")  
        game:GetService("RunService").Stepped:connect( 
            function() 
                    game.Players.LocalPlayer.Character:WaitForChild("Humanoid"):ChangeState(11)
