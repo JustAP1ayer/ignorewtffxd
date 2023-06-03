@@ -1,20 +1,15 @@
-  wait()
+
           if not game:IsLoaded() then game.Loaded:Wait() end
   if game.PlaceId == 537413528 and task.wait() then
   repeat wait(0.1) until  game.Loaded and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") 
-                -- Create a ScreenGui instance
       local gui = Instance.new("ScreenGui")
       gui.Name = "FarmGui"
       gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-      
-      -- Create a Frame to cover the whole screen
       local frame = Instance.new("Frame")
       frame.Size = UDim2.new(1, 0, 1, 0)
       frame.BackgroundColor3 = Color3.new(0, 0, 0)
       frame.BackgroundTransparency = 0.75
       frame.Parent = gui
-      
-      -- Create a TextLabel to display the message
       local message = Instance.new("TextLabel")
       message.Size = UDim2.new(1, -20, 0, 100)
       message.Position = UDim2.new(0, 10, 0.5, -50)
