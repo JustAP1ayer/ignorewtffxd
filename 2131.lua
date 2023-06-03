@@ -31,7 +31,7 @@
       bb:CaptureController()
       bb:ClickButton2(Vector2.new())
       end)
-   queue_on_teleport('loadstring(game:HttpGet(('https://raw.githubusercontent.com/JustAP1ayer/ignorewtffxd/main/2131.lua'),true))()')
+   queue_on_teleport('loadstring(game:HttpGet(("https://raw.githubusercontent.com/JustAP1ayer/ignorewtffxd/main/2131.lua"),true))()')
       local players = game:GetService("Players")
   local stages = workspace:WaitForChild("BoatStages"):WaitForChild("NormalStages")
   local gold = workspace:WaitForChild("ClaimRiverResultsGold")  
