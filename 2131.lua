@@ -1,7 +1,8 @@
 
           if not game:IsLoaded() then game.Loaded:Wait() end
   repeat wait(0.1) until  game.Loaded and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") 
-  if game.PlaceId == 537413528 and task.wait() then
+ task.wait(0.15)
+if game.PlaceId == 537413528 and task.wait() then
 
                 -- Create a ScreenGui instance
       local gui = Instance.new("ScreenGui")
