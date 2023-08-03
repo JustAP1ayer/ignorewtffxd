@@ -3,7 +3,7 @@ task.wait(2.5)
   repeat wait(0.1) until  game.Loaded
   
   local args = {
-    [1] = "L",
+    [1] = "L GET DESTROYED BY REDBLUE (DSC - redblue.) FOR THE SCRIPT",
     [2] = "All"
 }
 
