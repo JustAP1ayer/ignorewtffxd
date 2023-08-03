@@ -13,5 +13,5 @@ game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents")
   repeat wait(0.1) until  game.Loaded and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") 
     loadstring(game:HttpGet(("https://raw.githubusercontent.com/JustAP1ayer/ignorewtffxd/main/2131.lua"),true))()
     ]])
-loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Extras/Anti-Cheat'))()
-ServerHop()
+             loadstring(game:HttpGet("https://raw.githubusercontent.com/JustAP1ayer/ignorewtffxd/main/serverhopxd.lua", true))()
+
