@@ -3,7 +3,7 @@ task.wait(2.5)
   repeat wait(0.1) until  game.Loaded
   
 local args = {
-    [1] = "guys you can speak the timer didnt reset",
+    [1] = "guys you can speak the timer didnt reset" .. tostring(math.random(0, 100000)),
     [2] = "All"
 }
 
