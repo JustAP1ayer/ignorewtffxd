@@ -1,6 +1,10 @@
 task.wait(2.5)
  if not game:IsLoaded() then game.Loaded:Wait() end
   repeat wait(0.1) until  game.Loaded
+spawn(function()
+   repeat wait(0.1) until  game.Loaded and game.Players.LocalPlayer.Character
+  game.Players.LocalPlayer.Character:PivotTo(workspace.Board.CFrame - Vector3.new(-5,-7,0))
+ end)
   task.spawn(function()
     while task.wait() do
 local args = {
