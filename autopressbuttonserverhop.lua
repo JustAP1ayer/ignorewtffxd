@@ -1,6 +1,7 @@
 task.wait(1.5)
  if not game:IsLoaded() then game.Loaded:Wait() end
   repeat wait(0.1) until  game.Loaded and workspace:FindFirstChild("Button") and workspace.Button:FindFirstChild("ThePart") and workspace.Button:FindFirstChild("ThePart"):FindFirstChild("ClickDetector")
+workspace.Button:FindFirstChild("ThePart"):FindFirstChild("ClickDetector").MaxActivationDistance = 9e9
 fireclickdetector(workspace.Button:FindFirstChild("ThePart"):FindFirstChild("ClickDetector"))
 task.wait(0.1)
 fireclickdetector(workspace.Button:FindFirstChild("ThePart"):FindFirstChild("ClickDetector"))
