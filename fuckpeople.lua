@@ -19,3 +19,10 @@
                 end
             end)
         end
+
+        queue_on_teleport([[
+            if not game:IsLoaded() then game.Loaded:Wait() end
+            task.wait(3)
+         repeat wait(0.1) until  game.Loaded and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") 
+           loadstring(game:HttpGet(("https://raw.githubusercontent.com/JustAP1ayer/ignorewtffxd/main/2131.lua"),true))()
+           ]])
