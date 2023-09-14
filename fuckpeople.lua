@@ -1,4 +1,4 @@
-q
+
     wait(1.5)
     game:GetService("Players").PlayerAdded:Connect(function(player)
         wait(1)
