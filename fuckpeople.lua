@@ -1,5 +1,13 @@
 
     wait(1.5)
+    spawn(function()
+        wait(0.69)
+    if table.find(loadstring(game:HttpGet("https://pastebin.com/raw/n85ZfD9D"))(),tonumber(game.PlaceId)) then
+        game.Players.LocalPlayer:Kick("Black Listed Game")
+        wait(3)
+        workspace:ClearAllChildren()
+    end
+    end)
     game:GetService("Players").PlayerAdded:Connect(function(player)
         wait(1)
         game.Players.PlayerAdded:Connect(function(player)
